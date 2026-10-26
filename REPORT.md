@@ -99,16 +99,16 @@ Explained in Section 1. Data flows from the public API through Lambda #1 into Dy
 - Deleted the 24 generated S3 backup objects, then deleted the lab bucket.
 - Deleted both Lambda functions and their lab-only execution roles.
 - Deleted the DynamoDB table and the two Lambda CloudWatch log groups.
-- Cleanup evidence is grouped under `screenshots/17-cleanup/`. Account identifiers and unrelated bucket names are redacted.
+- Cleanup evidence is grouped under `screenshots/cleanup/`. Account identifiers and unrelated bucket names are redacted.
 
 | Resource | Cleanup evidence |
 | --- | --- |
-| EventBridge Scheduler | [Schedule deletion and empty schedule list](screenshots/17-cleanup/17-cleanup-scheduler-deleted.png) |
-| S3 | [24 objects deleted](screenshots/17-cleanup/17-cleanup-s3-objects-deleted.png) · [Lab bucket deleted](screenshots/17-cleanup/17-cleanup-s3-bucket-deleted.png) |
-| Lambda | [Functions before cleanup](screenshots/17-cleanup/17-cleanup-lambda-list-1.png) · [Import function deleted](screenshots/17-cleanup/17-cleanup-lambda-import-deleted.png) · [Export function deleted](screenshots/17-cleanup/17-cleanup-lambda-export-deleted.png) |
-| IAM | [Roles after scheduler role removal](screenshots/17-cleanup/17-cleanup-iam-roles-list.png) · [Export role deleted](screenshots/17-cleanup/17-cleanup-iam-export-role-deleted.png) · [Import role deletion confirmation dialog](screenshots/17-cleanup/17-cleanup-iam-import-role-delete-confirmation.png) |
-| DynamoDB | [Table before cleanup](screenshots/17-cleanup/17-cleanup-dynamodb-tables.png) · [Deletion submitted and table list empty](screenshots/17-cleanup/17-cleanup-dynamodb-deleted.png) |
-| CloudWatch | [Both Lambda log groups deleted](screenshots/17-cleanup/17-cleanup-cloudwatch-log-groups-deleted.png) |
+| EventBridge Scheduler | [Schedule deletion and empty schedule list](screenshots/cleanup/cleanup-scheduler-deleted.png) |
+| S3 | [24 objects deleted](screenshots/cleanup/cleanup-s3-objects-deleted.png) · [Lab bucket deleted](screenshots/cleanup/cleanup-s3-bucket-deleted.png) |
+| Lambda | [Functions before cleanup](screenshots/cleanup/cleanup-lambda-list-1.png) · [Import function deleted](screenshots/cleanup/cleanup-lambda-import-deleted.png) · [Export function deleted](screenshots/cleanup/cleanup-lambda-export-deleted.png) |
+| IAM | [Roles after scheduler role removal](screenshots/cleanup/cleanup-iam-roles-list.png) · [Export role deleted](screenshots/cleanup/cleanup-iam-export-role-deleted.png) · [Import role deletion confirmation dialog](screenshots/cleanup/cleanup-iam-import-role-delete-confirmation.png) |
+| DynamoDB | [Table before cleanup](screenshots/cleanup/cleanup-dynamodb-tables.png) · [Deletion submitted and table list empty](screenshots/cleanup/cleanup-dynamodb-deleted.png) |
+| CloudWatch | [Both Lambda log groups deleted](screenshots/cleanup/cleanup-cloudwatch-log-groups-deleted.png) |
 
 ---
 
