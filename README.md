@@ -414,7 +414,7 @@ Submit a short report (screenshots **without exposing credentials**) showing:
 - [ ] **EventBridge Scheduler:** Enabled schedule with `rate(2 minutes)`.
 - [ ] **Automated proof:** Two or more S3 JSON files created from scheduled runs.
 - [ ] **Observability:** CloudWatch logs and Lambda invocation graph.
-- [ ] **Cleanup:** Schedule disabled or deleted after demo.
+- [ ] **Cleanup:** Confirm the schedule and lab resources are deleted; include evidence in [REPORT.md](REPORT.md#29-cleanup).
 
 ### Questions to answer in your report
 
